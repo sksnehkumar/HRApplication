@@ -10,7 +10,7 @@ namespace Common
         {
             get
             {
-                return "server=.";
+                return "server=.;database=HRApplication;integrated security=true";
             }
         }
 
