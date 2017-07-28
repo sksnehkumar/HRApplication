@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoryInfo.cs" />
+    <Compile Include="ClassCheck.cs" />
     <Compile Include="EmployeeInfo.cs" />
     <Compile Include="OptumDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
