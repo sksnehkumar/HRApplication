@@ -43,9 +43,11 @@
     <Compile Include="CategoryInfo.cs" />
     <Compile Include="ClassCheck.cs" />
     <Compile Include="EmployeeInfo.cs" />
+    <Compile Include="EntityCollection.cs" />
     <Compile Include="OptumDetails.cs" />
     <Compile Include="ProjectInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkillInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
