@@ -13,7 +13,7 @@ namespace BusinessEntities
 
         }
 
-        public EmployeeInfo(int employeeId, string firstName, string middleName, string lastName, string fullName, string dateOfBirth, string age, string gender, string civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, int lastModifiedBy)
+        public EmployeeInfo(int employeeId, string firstName, string middleName, string lastName, string fullName, DateTime dateOfBirth, string age, string gender, string civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, int lastModifiedBy)
         {
             EmployeeId = employeeId;
             FirstName = firstName;
@@ -47,7 +47,7 @@ namespace BusinessEntities
         public string MiddleName { get; set; }
         public string LastName { get; set; }
         public string FullName { get; set; }
-        public string DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public string Age { get; set; }
         public string Gender { get; set; }
         public string CivilStatus { get; set; }
@@ -67,6 +67,9 @@ namespace BusinessEntities
         public string Recognitions { get; set; }
         public int CreatedBy { get; set; }
         public int LastModifiedBy { get; set; }
-     
+        public DateTime LastModifiedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
+
+
     }
 }
