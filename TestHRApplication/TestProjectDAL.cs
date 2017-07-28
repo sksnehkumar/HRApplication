@@ -6,12 +6,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TestHRApplication
 {
     /// <summary>
-    /// Summary description for TestSkillDAL
+    /// Summary description for TestProjectDAL
     /// </summary>
     [TestClass]
-    public class TestSkillDAL
+    public class TestProjectDAL
     {
-       
+        
 
         [TestMethod]
         public void TestMethod1()
