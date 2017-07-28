@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestHRApplication
+namespace DataAccessLayer
 {
-    class TestSkillDAL
+    class EmployeeDAL
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestHRApplication
 {
-    class TestSkillDAL
+    class TestCategoryDAL
     {
     }
 }

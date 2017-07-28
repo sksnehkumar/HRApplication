@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9802DD27-74C3-4A12-9301-8A0C99B1CB3E}</ProjectGuid>
+    <ProjectGuid>{AD58D4F3-51E6-4DAC-9BE3-BECA80833C69}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestHRApplication</RootNamespace>
     <AssemblyName>TestHRApplication</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -50,18 +50,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TestCategoryDAL.cs" />
+    <Compile Include="TestEmployeeDAL.cs" />
+    <Compile Include="TestProjectDAL.cs" />
     <Compile Include="TestSkillDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
-      <Project>{061a698a-0b79-494d-a656-bf9a388cdad4}</Project>
-      <Name>BusinessEntities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{f99a3b65-de15-4cbf-a0e4-b904bd0a0b4c}</Project>
-      <Name>DataAccessLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
