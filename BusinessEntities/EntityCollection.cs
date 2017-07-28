@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class EntityCollection<T> : List<T>
+    public class EntityCollection<T> : List<T>
     {
 
     }
