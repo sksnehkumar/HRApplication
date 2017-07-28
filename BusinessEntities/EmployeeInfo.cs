@@ -8,6 +8,38 @@ namespace BusinessEntities
 {
     class EmployeeInfo
     {
+
+        public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
+        public string FullName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string Age { get; set; }
+        public string Gender { get; set; }
+        public string CivilStatus { get; set; }
+        public string Citizenship { get; set; }
+        public string Religion { get; set; }
+        public string MobileNo { get; set; }
+        public string HomePhoneNo { get; set; }
+        public string Street1 { get; set; }
+        public string Street2 { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string ZipCode { get; set; }
+        public string Country { get; set; }
+        public int ProjectProfile { get; set; }
+        public int SkillProfile { get; set; }
+        public string EducBackground { get; set; }
+        public string Recognitions { get; set; }
+        public int CreatedBy { get; set; }
+        public int LastModifiedBy { get; set; }
+        public DateTime LastModifiedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
+
+        public OptumDetails OptumDetails { get; set; }
+
+
         public EmployeeInfo()
         {
 
@@ -40,35 +72,17 @@ namespace BusinessEntities
             Recognitions = recognitions;
             CreatedBy = createdBy;
             LastModifiedBy = lastModifiedBy;
+            //
+            /*OptumDetails = new OptumDetails();
+            OptumDetails.EmployeeId = entepriseId;
+            OptumDetails.EmployeeId = employeeId;
+            OptumDetails.Email = email;
+            */
+            //OptumDetails.Level=
+
         }
 
-        public int EmployeeId { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
-        public string FullName { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public string Age { get; set; }
-        public string Gender { get; set; }
-        public string CivilStatus { get; set; }
-        public string Citizenship { get; set; }
-        public string Religion { get; set; }
-        public string MobileNo { get; set; }
-        public string HomePhoneNo { get; set; }
-        public string Street1 { get; set; }
-        public string Street2 { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string ZipCode { get; set; }
-        public string Country { get; set; }
-        public int ProjectProfile { get; set; }
-        public int SkillProfile { get; set; }
-        public string EducBackground { get; set; }
-        public string Recognitions { get; set; }
-        public int CreatedBy { get; set; }
-        public int LastModifiedBy { get; set; }
-        public DateTime LastModifiedDate { get; set; }
-        public DateTime CreatedDate { get; set; }
+       
 
 
     }

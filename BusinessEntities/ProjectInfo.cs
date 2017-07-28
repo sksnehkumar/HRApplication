@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class ProjectInfo
+    public class ProjectInfo
     {
+
+        public int ProjId { get; set; }
+        public string ProjName { get; set; }
+        public string Description { get; set; }
+        public string Client { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public string CreatedBy { get; set; }
+        public string LastModifiedBy { get; set; }
+        public DateTime LastModifiedDate { get; set; }
+        public DateTime CreatedDate { get; set; }
+
         public ProjectInfo()
         {
 
@@ -25,15 +37,6 @@ namespace BusinessEntities
             LastModifiedBy = lastModifiedBy;
         }
 
-        public int ProjId { get; set; }
-        public string ProjName { get; set; }
-        public string Description { get; set; }
-        public string Client { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public string CreatedBy { get; set; }
-        public string LastModifiedBy { get; set; }
-        public DateTime LastModifiedDate { get; set; }
-        public DateTime CreatedDate { get; set; }
+      
     }
 }
