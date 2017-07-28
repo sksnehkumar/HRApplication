@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD58D4F3-51E6-4DAC-9BE3-BECA80833C69}</ProjectGuid>
+    <ProjectGuid>{AEB6F003-9EF7-4FC5-8ECF-7C64DF6D6899}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestHRApplication</RootNamespace>
@@ -45,16 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="TestCategoryDAL.cs" />
     <Compile Include="TestEmployeeDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestProjectDAL.cs" />
     <Compile Include="TestSkillDAL.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

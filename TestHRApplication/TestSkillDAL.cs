@@ -1,12 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestHRApplication
 {
-    class TestSkillDAL
+    /// <summary>
+    /// Summary description for TestSkillDAL
+    /// </summary>
+    [TestClass]
+    public class TestSkillDAL
     {
+       
+
+        [TestMethod]
+        public void TestMethod1()
+        {
+            //
+            // TODO: Add test logic here
+            //
+        }
     }
 }

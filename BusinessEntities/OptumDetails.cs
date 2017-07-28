@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class OptumDetails
+    public class OptumDetails
     {
         public OptumDetails()
         {
