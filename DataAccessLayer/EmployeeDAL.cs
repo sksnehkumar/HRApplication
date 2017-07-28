@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessEntities
+namespace DataAccessLayer
 {
-    public class EntityCollection<T> : List<T>
+    class EmployeeDAL
     {
-
     }
 }

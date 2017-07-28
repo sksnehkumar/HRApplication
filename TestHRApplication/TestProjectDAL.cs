@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessEntities
+namespace TestHRApplication
 {
-    public class EntityCollection<T> : List<T>
+    class TestProjectDAL
     {
-
     }
 }

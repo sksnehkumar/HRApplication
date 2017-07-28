@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9802DD27-74C3-4A12-9301-8A0C99B1CB3E}</ProjectGuid>
+    <ProjectGuid>{9747C11C-3277-430F-9435-BD9C7AF9E005}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestHRApplication</RootNamespace>
@@ -50,18 +50,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestSkillDAL.cs" />
+    <Compile Include="TestCategoryDAL.cs" />
+    <Compile Include="TestEmployeeDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
-      <Project>{061a698a-0b79-494d-a656-bf9a388cdad4}</Project>
-      <Name>BusinessEntities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{f99a3b65-de15-4cbf-a0e4-b904bd0a0b4c}</Project>
-      <Name>DataAccessLayer</Name>
-    </ProjectReference>
+    <Compile Include="TestProjectDAL.cs" />
+    <Compile Include="TestSkillDAL.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

@@ -1,20 +1,12 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BusinessEntities;
-using DataAccessLayer;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace TestHRApplication
 {
-    [TestClass]
-    public class TestSkillDAL
+    class TestSkillDAL
     {
-        [TestMethod]
-        public void TestCreateSkill()
-        {
-            SkillDAL objSkillDAL = new SkillDAL();
-            SkillInfo objSkillInfo = new SkillInfo(101,"C#","C# Language",101,1,new DateTime(2017,07,01),1, new DateTime(2017, 07, 01));
-            bool flag = objSkillDAL.CreateSkill(objSkillInfo);
-            Assert.IsTrue(flag);
-        }
     }
 }
