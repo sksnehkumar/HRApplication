@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class SkillInfo
+    public class SkillInfo
     {
         public SkillInfo()
         {
 
         }
-        public SkillInfo(int skillId, string skillName, string skillDescription, int categoryId, string categoryName, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public SkillInfo(int skillId, string skillName, string skillDescription, int categoryId, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             SkillId = skillId;
             SkillName = skillName;
             SkillDescription = skillDescription;
             CategoryId = categoryId;
-            CategoryName = categoryName;
             CreatedBy = createdBy;
             CreatedDate = createdDate;
             LastModifiedBy = lastModifiedBy;
@@ -29,7 +28,6 @@ namespace BusinessEntities
         public string SkillName { get; set; }
         public string SkillDescription { get; set; }
         public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
