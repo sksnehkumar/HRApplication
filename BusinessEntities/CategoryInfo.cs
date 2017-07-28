@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class CategoryInfo
+    public class CategoryInfo
     {
         public CategoryInfo()
         {
 
         }
 
-        public CategoryInfo(int categoryId, string name, string description, int createdBy, int lastModifiedBy)
+        public CategoryInfo(int categoryId, string categoryName, string categoryDescription, int createdBy, int lastModifiedBy)
         {
             CategoryId = categoryId;
-            Name = name;
-            Description = description;
+            CategoryName = categoryName;
+            CategoryDescription = categoryDescription;
             CreatedBy = createdBy;
             LastModifiedBy = lastModifiedBy;
         }
 
         public int CategoryId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string CategoryName { get; set; }
+        public string CategoryDescription { get; set; }
         public int CreatedBy { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
