@@ -8,6 +8,11 @@ namespace BusinessEntities
 {
     class OptumDetails
     {
+        public OptumDetails()
+        {
+
+        }
+
         public OptumDetails(int employeeId, string email, string enterpriseId, int level, int speciality, string status, DateTime dateHired, int createdBy, int lastModifiedBy)
         {
             EmployeeId = employeeId;
