@@ -44,6 +44,7 @@
     <Compile Include="ClassCheck.cs" />
     <Compile Include="EmployeeInfo.cs" />
     <Compile Include="OptumDetails.cs" />
+    <Compile Include="ProjectInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
