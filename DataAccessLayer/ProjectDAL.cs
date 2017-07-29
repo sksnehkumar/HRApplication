@@ -10,7 +10,7 @@ using Common;
 
 namespace DataAccessLayer
 {
-    class ProjectDAL
+    public class ProjectDAL
     {
         SqlConnection objConn;
         SqlCommand objComm;
@@ -202,7 +202,7 @@ namespace DataAccessLayer
                 Console.WriteLine(e.Message);
             }
         }
-        public DataTable SearchProjects(ProjectInfo project)
+        public DataTable SearchProjects()
         {
             
                 ConnectToDB();
@@ -227,7 +227,7 @@ namespace DataAccessLayer
                 }
             }
             
-        public DataTable GetProjectList(ProjectInfo project)
+        public DataTable GetProjectList()
         {
             
                 ConnectToDB();

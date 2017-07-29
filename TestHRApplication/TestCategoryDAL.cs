@@ -1,12 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BusinessEntities;
+using DataAccessLayer;
 
 namespace TestHRApplication
 {
-    class TestCategoryDAL
+    [TestClass]
+    public class TestCategoryDAL
     {
+        [TestMethod]
+        public void TestCreateCategory()
+        {
+            CategoryDAL objCategoryDAL = new CategoryDAL();
+            CategoryInfo objCategoryInfo = new CategoryInfo(2, "Microsoft", "Windows Related Technology", 1,DateTime.Now, 1, DateTime.Now);
+            objCategoryDAL.CreateCategory(objCategoryInfo);
+        }
+
+        [TestMethod]
+        public void TestUpdateCategory()
+        {
+            CategoryDAL objCategoryDAL = new CategoryDAL();
+            CategoryInfo objCategoryInfo = new CategoryInfo(2, "Microsoft Stack", "Windows Related Technology", 1, DateTime.Now, 1, DateTime.Now);
+            objCategoryDAL.UpdateCategory(objCategoryInfo);
+        }
+
+        [TestMethod]
+        public void TestSearchCategories()
+        {
+            CategoryDAL objCategoryDAL = new CategoryDAL();
+            objCategoryDAL.SearchCategories();
+        }
+
+        [TestMethod]
+        public void TestViewCategory()
+        {
+            CategoryDAL objCategoryDAL = new CategoryDAL();
+            objCategoryDAL.ViewCategory(2);
+        }
+
+        [TestMethod]
+        public void TestGetCategoryList()
+        {
+            CategoryDAL objCategoryDAL = new CategoryDAL();
+            objCategoryDAL.GetCategoryList();
+        }
     }
 }

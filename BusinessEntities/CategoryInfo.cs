@@ -13,13 +13,15 @@ namespace BusinessEntities
 
         }
 
-        public CategoryInfo(int categoryId, string categoryName, string categoryDescription, int createdBy, int lastModifiedBy)
+        public CategoryInfo(int categoryId, string categoryName, string categoryDescription, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             CategoryId = categoryId;
             CategoryName = categoryName;
             CategoryDescription = categoryDescription;
             CreatedBy = createdBy;
             LastModifiedBy = lastModifiedBy;
+            LastModifiedDate = lastModifiedDate;
+            CreatedDate = createdDate;
         }
 
         public int CategoryId { get; set; }

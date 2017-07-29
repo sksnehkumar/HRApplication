@@ -10,8 +10,6 @@ namespace TestHRApplication
     [TestClass]
     public class TestSkillDAL
     {
-       
-
         [TestMethod]
         public void TestCreateSkill()
         {
@@ -42,6 +40,13 @@ namespace TestHRApplication
         {
             SkillDAL objSkillDAL = new SkillDAL();
             objSkillDAL.ViewSkill(102);
+        }
+
+        [TestMethod]
+        public void TestSkillList()
+        {
+            SkillDAL objSkillDAL = new SkillDAL();
+            objSkillDAL.SearchSkills();
         }
     }
 }

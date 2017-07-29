@@ -128,16 +128,18 @@ namespace DataAccessLayer
                 objDR = objComm.ExecuteReader();
                 objDT = new DataTable();
                 objDT.Load(objDR);
-                
-                objConn.Close();
 
                 return objDT;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
-                return null;
+                
             }
+            finally
+            {
+                objConn.Close();
+            }
+            return null;
         }
 
         public DataTable ViewSkill(int skillId)
