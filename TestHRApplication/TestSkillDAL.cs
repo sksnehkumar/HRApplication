@@ -1,24 +1,47 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
+using BusinessEntities;
+using DataAccessLayer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace TestHRApplication
 {
-    /// <summary>
-    /// Summary description for TestSkillDAL
-    /// </summary>
+
     [TestClass]
     public class TestSkillDAL
     {
        
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestCreateSkill()
         {
-            //
-            // TODO: Add test logic here
-            //
+            SkillDAL objSkillDAL = new SkillDAL();
+            SkillInfo objSkillInfo = new SkillInfo(102, "VB", "Visual BAsic", 101, 1, DateTime.Now, 1, DateTime.Now);
+
+            objSkillDAL.CreateSkill(objSkillInfo);
+        }
+
+        [TestMethod]
+        public void TestUpdateSkill()
+        {
+            SkillDAL objSkillDAL = new SkillDAL();
+            SkillInfo objSkillInfo = new SkillInfo(101, ".Net", ".Net Framework", 101, 1, DateTime.Now, 1, DateTime.Now);
+
+            objSkillDAL.UpdateSkill(objSkillInfo);
+        }
+
+        [TestMethod]
+        public void TestSearchSkill()
+        {
+            SkillDAL objSkillDAL = new SkillDAL();
+            objSkillDAL.SearchSkills();
+        }
+
+        [TestMethod]
+        public void TestViewSkill()
+        {
+            SkillDAL objSkillDAL = new SkillDAL();
+            objSkillDAL.ViewSkill(102);
         }
     }
 }
