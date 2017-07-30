@@ -386,26 +386,32 @@ namespace DataAccessLayer
 
             objConn.Open();
 
-            try
-            {
-                objConn.Open();
+            int rowsAffected = objComm.ExecuteNonQuery();
+            if (rowsAffected > 0)
+                return true;
+            else
+                return false;
 
-                int rowsAffected = objComm.ExecuteNonQuery();
-                if (rowsAffected > 0)
-                    return true;
-                else
-                    return false;
+            //    try
+            //    {
+            //        objConn.Open();
+
+            //        int rowsAffected = objComm.ExecuteNonQuery();
+            //        if (rowsAffected > 0)
+            //            return true;
+            //        else
+            //            return false;
+            //    }
+            //    catch (Exception e)
+            //    {
+
+            //    }
+            //    finally
+            //    {
+            //        objConn.Close();
+            //    }
+            //    return false;
             }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                objConn.Close();
-            }
-            //return false;
+
         }
-
-    }
 }

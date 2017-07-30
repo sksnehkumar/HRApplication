@@ -22,7 +22,7 @@ namespace TestHRApplication
         public void TestUpdateProject()
         {
             ProjectDAL objProjectDAL = new ProjectDAL();
-            ProjectInfo objProjectInfo = new ProjectInfo(503, "HR Application", "HR Management System", "Abridge", DateTime.Now, DateTime.Now, 101, DateTime.Now, 101, DateTime.Now);
+            ProjectInfo objProjectInfo = new ProjectInfo(504, "HR Application", "HR Management System", "Abridge", DateTime.Now, DateTime.Now, 101, DateTime.Now, 101, DateTime.Now);
             objProjectDAL.UpdateProject(objProjectInfo);
         }
 

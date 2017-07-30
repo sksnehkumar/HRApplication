@@ -13,8 +13,8 @@ namespace TestHRApplication
         public void TestCreateEmployee()
         {
             EmployeeDAL objEmployeeDAL = new EmployeeDAL();
-            EmployeeInfo objEmployeeInfo = new EmployeeInfo("Sanjit", "Kumar", "Varnwal", new DateTime(1995, 8, 1), 22, "Male", 
-                801, "Indian", "Hindu", "8292780061", "8292780061", "Jhumri", "Tilaiya", "Koderma", "Jharrkhand", "827650", "India", 502,
+            EmployeeInfo objEmployeeInfo = new EmployeeInfo("Krishna", "Kumar", "Murari", new DateTime(1995, 8, 1), 22, "Male", 
+                801, "Indian", "Hindu", "8292780061", "8292780061", "Jhumri", "Tilaiya", "Koderma", "Jharkhand", "827650", "India", 502,
                 402, "Graduate", "None", 101, DateTime.Now, 101, DateTime.Now);
             objEmployeeDAL.CreateEmployee(objEmployeeInfo);
         }
@@ -22,7 +22,7 @@ namespace TestHRApplication
         public void TestUpdateEmployee()
         {
             EmployeeDAL objEmployeeDAL = new EmployeeDAL();
-            EmployeeInfo objEmployeeInfo = new EmployeeInfo(903, "Sneh", "Kumar", "Kumar", new DateTime(1995, 4, 4), 22, "Male",
+            EmployeeInfo objEmployeeInfo = new EmployeeInfo(902, "Sneh", "", "Kumar", new DateTime(1995, 4, 4), 22, "Male",
                 801, "Indian", "Hindu", "8292780061", "8292780061", "Bokaro", "Steel City", "Bokaro", "Jharkhand", "827004", "India", 502,
                 402, "Graduate", "None", 101, DateTime.Now, 101, DateTime.Now);
             objEmployeeDAL.UpdateEmployee(objEmployeeInfo);

@@ -13,7 +13,7 @@ namespace TestHRApplication
         public void TestCreateCategory()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            CategoryInfo objCategoryInfo = new CategoryInfo("Goolgle", "Android Related Technology", 101,DateTime.Now, 101, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo("Apple", "iOS Related Technology", 101,DateTime.Now, 101, DateTime.Now);
             objCategoryDAL.CreateCategory(objCategoryInfo);
         }
 
@@ -21,7 +21,7 @@ namespace TestHRApplication
         public void TestUpdateCategory()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            CategoryInfo objCategoryInfo = new CategoryInfo(302, "Microsoft", "Windows Related Technology", 101, DateTime.Now, 101, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo(304, "Oracle", "Oracle Related Technology", 101, DateTime.Now, 101, DateTime.Now);
             objCategoryDAL.UpdateCategory(objCategoryInfo);
         }
 
