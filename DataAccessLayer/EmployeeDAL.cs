@@ -46,7 +46,6 @@ namespace DataAccessLayer
             objComm = new SqlCommand(Database.CreateEmployee, objConn);
             objComm.CommandType = CommandType.StoredProcedure;
 
-            objSP_EmployeeId = new SqlParameter("@EmployeeId", SqlDbType.Int);
             objSP_FirstName = new SqlParameter("@FirstName", SqlDbType.VarChar, 50);
             objSP_MiddleName = new SqlParameter("@MiddleName", SqlDbType.VarChar, 50);
             objSP_LastName = new SqlParameter("@LastName", SqlDbType.VarChar, 50);
@@ -73,7 +72,6 @@ namespace DataAccessLayer
             objSP_LastModifiedBy = new SqlParameter("@LastModifiedBy", SqlDbType.Int);
             objSP_LastModifiedDate = new SqlParameter("@LastModifiedDate", SqlDbType.DateTime);
 
-            objSP_EmployeeId.Direction = ParameterDirection.Input;
             objSP_FirstName.Direction = ParameterDirection.Input;
             objSP_MiddleName.Direction = ParameterDirection.Input;
             objSP_LastName.Direction = ParameterDirection.Input;
@@ -100,7 +98,6 @@ namespace DataAccessLayer
             objSP_LastModifiedBy.Direction = ParameterDirection.Input;
             objSP_LastModifiedDate.Direction = ParameterDirection.Input;
 
-            objComm.Parameters.Add(objSP_EmployeeId);
             objComm.Parameters.Add(objSP_FirstName);
             objComm.Parameters.Add(objSP_MiddleName);
             objComm.Parameters.Add(objSP_LastName);
@@ -127,7 +124,6 @@ namespace DataAccessLayer
             objComm.Parameters.Add(objSP_LastModifiedBy);
             objComm.Parameters.Add(objSP_LastModifiedDate);
 
-            objSP_EmployeeId.Value = objEmployeeInfo.EmployeeId;
             objSP_FirstName.Value = objEmployeeInfo.FirstName;
             objSP_MiddleName.Value = objEmployeeInfo.MiddleName;
             objSP_LastName.Value = objEmployeeInfo.LastName;
@@ -166,13 +162,13 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-                //Console.WriteLine(e.Message);
+                throw e;
             }
             finally
             {
                 objConn.Close();
             }
-            return false;
+            //return false;
 
         }
         public DataTable SearchEmployees()
@@ -192,14 +188,14 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-             
+                throw e;
             }
             finally
             {
                 objConn.Close();
             }
 
-            return null;
+            //return null;
         }
         public DataTable ViewEmployee(int employeeId)
         {
@@ -274,13 +270,13 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-                
+                throw e;
             }
             finally
             {
                 objConn.Close();
             }
-            return null;
+            //return null;
         }
         public bool UpdateEmployee(EmployeeInfo objEmployeeInfo)
         {
@@ -388,6 +384,8 @@ namespace DataAccessLayer
             objSP_LastModifiedBy.Value = objEmployeeInfo.LastModifiedBy;
             objSP_LastModifiedDate.Value = objEmployeeInfo.LastModifiedDate;
 
+            objConn.Open();
+
             try
             {
                 objConn.Open();
@@ -400,13 +398,13 @@ namespace DataAccessLayer
             }
             catch (Exception e)
             {
-
+                throw e;
             }
             finally
             {
                 objConn.Close();
             }
-            return false;
+            //return false;
         }
 
     }

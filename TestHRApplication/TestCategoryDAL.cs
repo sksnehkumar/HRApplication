@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BusinessEntities;
 using DataAccessLayer;
+using System.Data;
 
 namespace TestHRApplication
 {
@@ -12,7 +13,7 @@ namespace TestHRApplication
         public void TestCreateCategory()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            CategoryInfo objCategoryInfo = new CategoryInfo(2, "Microsoft", "Windows Related Technology", 1,DateTime.Now, 1, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo("Goolgle", "Android Related Technology", 101,DateTime.Now, 101, DateTime.Now);
             objCategoryDAL.CreateCategory(objCategoryInfo);
         }
 
@@ -20,7 +21,7 @@ namespace TestHRApplication
         public void TestUpdateCategory()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            CategoryInfo objCategoryInfo = new CategoryInfo(2, "Microsoft Stack", "Windows Related Technology", 1, DateTime.Now, 1, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo(302, "Microsoft", "Windows Related Technology", 101, DateTime.Now, 101, DateTime.Now);
             objCategoryDAL.UpdateCategory(objCategoryInfo);
         }
 
@@ -28,21 +29,36 @@ namespace TestHRApplication
         public void TestSearchCategories()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            objCategoryDAL.SearchCategories();
+            DataTable objDT = objCategoryDAL.SearchCategories();
+
+            foreach(DataRow row in objDT.Rows)
+            {
+                Console.WriteLine(row[1].ToString());
+            }
         }
 
         [TestMethod]
         public void TestViewCategory()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            objCategoryDAL.ViewCategory(2);
+            DataTable objDT = objCategoryDAL.ViewCategory(302);
+
+            foreach (DataRow row in objDT.Rows)
+            {
+                Console.WriteLine(row[0].ToString() + " " + row[1].ToString());
+            }
         }
 
         [TestMethod]
         public void TestGetCategoryList()
         {
             CategoryDAL objCategoryDAL = new CategoryDAL();
-            objCategoryDAL.GetCategoryList();
+            DataTable objDT = objCategoryDAL.GetCategoryList();
+            
+            foreach(DataRow row in objDT.Rows)
+            {
+                Console.WriteLine(row[0].ToString());
+            }
         }
     }
 }

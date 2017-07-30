@@ -12,6 +12,34 @@ namespace BusinessEntities
         {
 
         }
+        public EmployeeInfo(string firstName, string middleName, string lastName, DateTime birthDate, int age, string gender, int civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        {
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            BirthDate = birthDate;
+            Age = age;
+            Gender = gender;
+            CivilStatus = civilStatus;
+            Citizenship = citizenship;
+            Religion = religion;
+            MobileNo = mobileNo;
+            HomePhoneNo = homePhoneNo;
+            Street1 = street1;
+            Street2 = street2;
+            City = city;
+            State = state;
+            ZipCode = zipCode;
+            Country = country;
+            ProjectProfile = projectProfile;
+            SkillProfile = skillProfile;
+            EducBackground = educBackground;
+            Recognitions = recognitions;
+            CreatedBy = createdBy;
+            CreatedDate = createdDate;
+            LastModifiedBy = lastModifiedBy;
+            LastModifiedDate = lastModifiedDate;
+        }
         public EmployeeInfo(int employeeId, string firstName, string middleName, string lastName, DateTime birthDate, int age, string gender, int civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             EmployeeId = employeeId;
@@ -68,7 +96,6 @@ namespace BusinessEntities
         public DateTime CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
-        
 
         public OptumDetails OptumDetails { get; set; }
 

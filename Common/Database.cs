@@ -17,8 +17,8 @@ namespace Common
         //Stored Procedures for Employee Management
         public const string CreateEmployee = "CreateEmployee";
         public const string SearchEmployees = "SearchEmployees";
-        public const string UpdateEmployee = "SearchEmployee";
-        public const string ViewEmployee = "SearchEmployee";
+        public const string UpdateEmployee = "UpdateEmployee";
+        public const string ViewEmployee = "ViewEmployee";
 
         //Stored Procedures for Project Management
         public const string CreateProject = "CreateProject";

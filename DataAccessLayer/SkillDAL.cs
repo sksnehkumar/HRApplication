@@ -40,7 +40,6 @@ namespace DataAccessLayer
 
         public bool CreateSkill(SkillInfo objSkillInfo)
         {
-            int skillId = objSkillInfo.SkillId;
             string skillName = objSkillInfo.SkillName;
             string skillDescription = objSkillInfo.SkillDescription;
             int categoryId = objSkillInfo.CategoryId;
@@ -53,7 +52,6 @@ namespace DataAccessLayer
             objComm = new SqlCommand(Database.CreateSkill, objConn);
             objComm.CommandType = CommandType.StoredProcedure;
 
-            objSP_SkillId = new SqlParameter("@SkillId", SqlDbType.Int);
             objSP_SkillName = new SqlParameter("@SkillName", SqlDbType.VarChar, 50);
             objSP_SkillDescription = new SqlParameter("@SkillDescription", SqlDbType.VarChar, 50);
             objSP_CategoryId = new SqlParameter("@CategoryId", SqlDbType.Int);
@@ -62,7 +60,6 @@ namespace DataAccessLayer
             objSP_LastModifiedBy = new SqlParameter("@LastModifiedBy", SqlDbType.Int);
             objSP_LastModifiedDate = new SqlParameter("@LastModifiedDate", SqlDbType.DateTime);
 
-            objSP_SkillId.Direction = ParameterDirection.Input;
             objSP_SkillName.Direction = ParameterDirection.Input;
             objSP_SkillDescription.Direction = ParameterDirection.Input;
             objSP_CategoryId.Direction = ParameterDirection.Input;
@@ -71,7 +68,6 @@ namespace DataAccessLayer
             objSP_LastModifiedBy.Direction = ParameterDirection.Input;
             objSP_LastModifiedDate.Direction = ParameterDirection.Input;
 
-            objComm.Parameters.Add(objSP_SkillId);
             objComm.Parameters.Add(objSP_SkillName);
             objComm.Parameters.Add(objSP_SkillDescription);
             objComm.Parameters.Add(objSP_CategoryId);
@@ -80,7 +76,6 @@ namespace DataAccessLayer
             objComm.Parameters.Add(objSP_LastModifiedBy);
             objComm.Parameters.Add(objSP_LastModifiedDate);
 
-            objSP_SkillId.Value = skillId;
             objSP_SkillName.Value = skillName;
             objSP_SkillDescription.Value = skillDescription;
             objSP_CategoryId.Value = categoryId;
@@ -94,20 +89,14 @@ namespace DataAccessLayer
                 objConn.Open();
 
                 int rowsAffected = objComm.ExecuteNonQuery();
-                if(rowsAffected > 0)
-                {
+                if (rowsAffected > 0)
                     return true;
-                }
                 else
-                {
                     return false;
-                }
-
-                
             }
             catch(Exception e)
             {
-                //Console.WriteLine(e.Message);
+                
             }
             finally
             {
@@ -115,7 +104,6 @@ namespace DataAccessLayer
             }
             return false;
         }
-
         public DataTable SearchSkills()
         {
             objConn = new SqlConnection(Database.ConnectionString);
@@ -141,7 +129,6 @@ namespace DataAccessLayer
             }
             return null;
         }
-
         public DataTable ViewSkill(int skillId)
         {
             //objConn = new SqlConnection(Database.ConnectionString);
@@ -211,17 +198,18 @@ namespace DataAccessLayer
                 objDT = new DataTable();
                 objDT.Load(objDR);
 
-                objConn.Close();
-
                 return objDT;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
-                return null;
+                
             }
+            finally
+            {
+                objConn.Close();
+            }
+            return null;
         }
-
         public bool UpdateSkill(SkillInfo objSkillInfo)
         {
             int skillId = objSkillInfo.SkillId;
@@ -269,23 +257,20 @@ namespace DataAccessLayer
 
                 int rowsAffected = objComm.ExecuteNonQuery();
                 if (rowsAffected > 0)
-                {
                     return true;
-                }
-
+                else
+                    return false;
             }
             catch (Exception e)
             {
-                //Console.WriteLine(e.Message);
+                
             }
             finally
             {
                 objConn.Close();
             }
-
-            return true;
+            return false;
         }
-
         public DataTable GetSkillList()
         {
             objConn = new SqlConnection(Database.ConnectionString);
@@ -299,15 +284,17 @@ namespace DataAccessLayer
                 objDT = new DataTable();
                 objDT.Load(objDR);
 
-                objConn.Close();
-
                 return objDT;
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
-                return null;
+                
             }
+            finally
+            {
+                objConn.Close();
+            }
+            return null;
         }
     }
 }
