@@ -40,9 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryBC.cs" />
+    <Compile Include="ProjectBC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkillBC.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{061a698a-0b79-494d-a656-bf9a388cdad4}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{f99a3b65-de15-4cbf-a0e4-b904bd0a0b4c}</Project>
       <Name>DataAccessLayer</Name>
