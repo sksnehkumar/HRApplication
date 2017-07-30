@@ -11,30 +11,32 @@ namespace BusinessLogic
 {
     public class EmployeeBC
     {
-        EmployeeDAL empDAL = new EmployeeDAL();
+        public EmployeeBC()
+        {
+
+        }
+        public EmployeeBC(EmployeeDAL objEmpDAL)
+        {
+            this.objEmpDAL = objEmpDAL;
+        }
+        public EmployeeDAL objEmpDAL { get; set; }
 
         public bool CreateEmployee(EmployeeInfo ObjEmployeeInfo)
         {
-            return empDAL.CreateEmployee(ObjEmployeeInfo);
-            //return flag;
-
+            return objEmpDAL.CreateEmployee(ObjEmployeeInfo);
         }
         public DataTable SearchEmployees()
         {
-            DataTable ObjDT = new DataTable();
-            ObjDT = empDAL.SearchEmployees();
-            return ObjDT;
+            return objEmpDAL.SearchEmployees();
         }
         public DataTable ViewEmployee(int EmployeeId)
         {
-            DataTable ObjDT = new DataTable();
-            ObjDT = empDAL.ViewEmployee(EmployeeId);
-            return ObjDT;
+            return objEmpDAL.ViewEmployee(EmployeeId);
+           
         }
         public bool UpdateEmploye(EmployeeInfo ObjEmployeeInfo)
-        {
-            
-            return empDAL.UpdateEmployee(ObjEmployeeInfo);
+        {   
+            return objEmpDAL.UpdateEmployee(ObjEmployeeInfo);
         }
     }
 }

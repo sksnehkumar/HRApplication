@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CategoryBC.cs" />
     <Compile Include="ProjectBC.cs" />
+    <Compile Include="EmployeeBC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkillBC.cs" />
   </ItemGroup>
