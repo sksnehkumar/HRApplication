@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeBC.cs" />
+    <Compile Include="CategoryBC.cs" />
+    <Compile Include="ProjectBC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkillBC.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
