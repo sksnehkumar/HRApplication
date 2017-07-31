@@ -30,7 +30,7 @@ namespace BusinessLogic
         {
             return objProjDAL.UpdateProject(objProjInfo);
         }
-        public DataTable SearchProjegories()
+        public DataTable SearchProjects()
         {
             return objProjDAL.SearchProjects();
         }
