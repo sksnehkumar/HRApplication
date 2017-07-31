@@ -28,10 +28,10 @@ namespace Controller
             SkillInfo objSkillInfo = new SkillInfo();
 
             DataRow row = objDT.Rows[0];
-            objSkillInfo.SkillId = Convert.ToInt32(row[0]);
-            objSkillInfo.SkillName = row[1].ToString();
-            objSkillInfo.SkillDescription = row[2].ToString();
-            objSkillInfo.CategoryId = Convert.ToInt32(row[3]);
+            objSkillInfo.SkillId = skillId;
+            objSkillInfo.SkillName = row[0].ToString();
+            objSkillInfo.SkillDescription = row[1].ToString();
+            objSkillInfo.CategoryId = Convert.ToInt32(row[2]);
 
             return objSkillInfo;
         }
@@ -56,7 +56,7 @@ namespace Controller
 
         public EntityCollection<string> GetSkillList()
         {
-            DataTable objDT = HRMFacade.SearchSkills();
+            DataTable objDT = HRMFacade.GetSkillList();
             EntityCollection<string> skillCollection = new EntityCollection<string>();
 
             foreach (DataRow row in objDT.Rows)
