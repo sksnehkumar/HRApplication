@@ -53,7 +53,7 @@ namespace BusinessLogic
         {
             return pBC.UpdateProject(objProjInfo);
         }
-        public DataTable SearchProjegories()
+        public DataTable SearchProjects()
         {
             return pBC.SearchProjects();
         }

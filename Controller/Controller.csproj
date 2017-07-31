@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeController.cs" />
+    <Compile Include="ProjectController.cs" />
     <Compile Include="CategoryController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkillController.cs" />
