@@ -20,10 +20,52 @@ namespace Controller
 
         public bool UpdateCategory(string CategoryName, string CategoryDescription, int lastModifiedBy)
         {
-            CategoryInfo objCategoryInfo = new CategoryInfo(CategoryName, CategoryDescription, lastModifiedBy, DateTime.Now, lastModifiedBy, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo(CategoryName, CategoryDescription, 0, null, lastModifiedBy, DateTime.Now);
 
             return HRMFacade.UpdateCategory(objCategoryInfo);
         }
 
+        public CategoryInfo ViewCategory(int catId)
+        {
+            DataTable objDT = HRMFacade.ViewCategory(catId);
+            CategoryInfo objCategoryInfo = new CategoryInfo();
+
+            DataRow row = objDT.Rows[0];
+            objCategoryInfo.CategoryId = catId;
+            objCategoryInfo.CategoryName = row[0].ToString();
+            objCategoryInfo.CategoryDescription= row[1].ToString();
+
+            return objCategoryInfo;
+
+        }
+        public EntityCollection<CategoryInfo> SearchCategoryByName()
+        {
+            DataTable objDT = HRMFacade.SearchCategories();
+            EntityCollection<CategoryInfo> categoryCollection = new EntityCollection<CategoryInfo>();
+
+            foreach (DataRow row in objDT.Rows)
+            {
+                CategoryInfo objCategoryInfo = new CategoryInfo();
+                objCategoryInfo.CategoryId = Convert.ToInt32(row[0]);
+                objCategoryInfo.CategoryName = row[1].ToString();
+                objCategoryInfo.CategoryDescription = row[2].ToString();
+
+                categoryCollection.Add(objCategoryInfo);
+            }
+            return categoryCollection;
+        }
+        public EntityCollection<string> GetCatagoryList()
+        {
+            DataTable objDT = HRMFacade.GetCatagoryList();
+            EntityCollection<string> categoryCollection = new EntityCollection<string>();
+
+            foreach (DataRow row in objDT.Rows)
+            {
+                string CategoryName = row[0].ToString();
+
+                categoryCollection.Add(CategoryName);
+            }
+            return categoryCollection;
+        }
     }
 }
