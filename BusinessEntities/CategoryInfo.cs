@@ -13,7 +13,7 @@ namespace BusinessEntities
 
         }
 
-        public CategoryInfo(string categoryName, string categoryDescription, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public CategoryInfo(string categoryName, string categoryDescription, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             CategoryName = categoryName;
             CategoryDescription = categoryDescription;
@@ -23,7 +23,7 @@ namespace BusinessEntities
             CreatedDate = createdDate;
         }
 
-        public CategoryInfo(int categoryId, string categoryName, string categoryDescription, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public CategoryInfo(int categoryId, string categoryName, string categoryDescription, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             CategoryId = categoryId;
             CategoryName = categoryName;

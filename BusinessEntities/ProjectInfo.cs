@@ -14,7 +14,7 @@ namespace BusinessEntities
         private object p;
         private DateTime now;
 
-        public ProjectInfo(string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public ProjectInfo(string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             ProjName = projName;
             Description = description;
@@ -32,7 +32,7 @@ namespace BusinessEntities
 
         }
 
-        public ProjectInfo(int projId, string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public ProjectInfo(int projId, string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             ProjId = projId;
             ProjName = projName;

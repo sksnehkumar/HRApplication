@@ -15,9 +15,9 @@ namespace Controller
             return HRMFacade.CreateSkill(objSkillInfo);
         }
 
-        public bool UpdateSkill(string skillName, string skillDescription, int categoryId, int lastModifiedBy)
+        public bool UpdateSkill(int skillId, string skillName, string skillDescription, int categoryId, int lastModifiedBy)
         {
-            SkillInfo objSkillInfo = new SkillInfo(skillName, skillDescription, categoryId, lastModifiedBy, DateTime.Now, lastModifiedBy, DateTime.Now);
+            SkillInfo objSkillInfo = new SkillInfo(skillId, skillName, skillDescription, categoryId, 0, null, lastModifiedBy, DateTime.Now);
 
             return HRMFacade.UpdateSkill(objSkillInfo);
         }

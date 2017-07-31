@@ -9,27 +9,27 @@ namespace Controller
     class ProjectController
     {
         HRManagerFacade HRMFacade = new HRManagerFacade();
-        public bool CreateProject(string ProjectName, string ProjectDescription, string client, DateTime startDate, DateTime endDate, int createdBy, int lastModifiedBy)
+        public bool CreateProject(string projectName, string projectDescription, string client, DateTime startDate, DateTime endDate, int createdBy, int lastModifiedBy)
         {
-            ProjectInfo objProjectInfo = new ProjectInfo(ProjectName, ProjectDescription, client, startDate, endDate, createdBy, DateTime.Now, lastModifiedBy, DateTime.Now);
+            ProjectInfo objProjectInfo = new ProjectInfo(projectName, projectDescription, client, startDate, endDate, createdBy, DateTime.Now, lastModifiedBy, DateTime.Now);
 
             return HRMFacade.CreateProject(objProjectInfo);
         }
 
-        public bool UpdateProject(string ProjectName, string ProjectDescription, string client, DateTime startDate, DateTime endDate, int lastModifiedBy)
+        public bool UpdateProject(int projectId, string projectName, string projectDescription, string client, DateTime startDate, DateTime endDate, int lastModifiedBy)
         {
-            ProjectInfo objProjectInfo = new ProjectInfo(ProjectName, ProjectDescription, client, startDate, endDate, 0, null, lastModifiedBy, DateTime.Now);
+            ProjectInfo objProjectInfo = new ProjectInfo(projectId, projectName, projectDescription, client, startDate, endDate, 0, null, lastModifiedBy, DateTime.Now);
 
             return HRMFacade.UpdateProject(objProjectInfo);
         }
 
-        public ProjectInfo viewProject(int ProjectId)
+        public ProjectInfo viewProject(int projectId)
         {
-            DataTable objDT = HRMFacade.ViewProject(ProjectId);
+            DataTable objDT = HRMFacade.ViewProject(projectId);
             ProjectInfo objProjectInfo = new ProjectInfo();
 
             DataRow row = objDT.Rows[0];
-            objProjectInfo.ProjId = ProjectId;
+            objProjectInfo.ProjId = projectId;
             objProjectInfo.ProjName = row[0].ToString();
             objProjectInfo.Description = row[1].ToString();
             objProjectInfo.Client = row[2].ToString();
@@ -42,7 +42,7 @@ namespace Controller
         public EntityCollection<ProjectInfo> SearchProjectByName()
         {
             DataTable objDT = HRMFacade.SearchProjects();
-            EntityCollection<ProjectInfo> ProjectCollection = new EntityCollection<ProjectInfo>();
+            EntityCollection<ProjectInfo> projectCollection = new EntityCollection<ProjectInfo>();
 
             foreach (DataRow row in objDT.Rows)
             {
@@ -54,23 +54,23 @@ namespace Controller
                 objProjectInfo.StartDate = Convert.ToDateTime(row[4]);
                 objProjectInfo.EndDate = Convert.ToDateTime(row[5]);
 
-                ProjectCollection.Add(objProjectInfo);
+                projectCollection.Add(objProjectInfo);
             }
-            return ProjectCollection;
+            return projectCollection;
         }
 
         public EntityCollection<string> GetProjectList()
         {
             DataTable objDT = HRMFacade.GetProjectList();
-            EntityCollection<string> ProjectCollection = new EntityCollection<string>();
+            EntityCollection<string> projectCollection = new EntityCollection<string>();
 
             foreach (DataRow row in objDT.Rows)
             {
-                string ProjectName = row[0].ToString();
+                string projectName = row[0].ToString();
 
-                ProjectCollection.Add(ProjectName);
+                projectCollection.Add(projectName);
             }
-            return ProjectCollection;
+            return projectCollection;
         }
     }
 }
