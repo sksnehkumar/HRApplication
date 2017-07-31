@@ -12,7 +12,7 @@ namespace BusinessEntities
         {
 
         }
-        public EmployeeInfo(string firstName, string middleName, string lastName, DateTime birthDate, int age, string gender, int civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public EmployeeInfo(string firstName, string middleName, string lastName, DateTime birthDate, int age, string gender, int civilStatus, string citizenship, string religion, string mobileNo, string homePhoneNo, string street1, string street2, string city, string state, string zipCode, string country, int projectProfile, int skillProfile, string educBackground, string recognitions, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             FirstName = firstName;
             MiddleName = middleName;
@@ -93,7 +93,7 @@ namespace BusinessEntities
         public string EducBackground { get; set; }
         public string Recognitions { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime ? CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
 

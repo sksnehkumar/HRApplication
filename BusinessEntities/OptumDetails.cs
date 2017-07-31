@@ -13,7 +13,7 @@ namespace BusinessEntities
 
         }
 
-        public OptumDetails(int employeeId, string email, string enterpriseId, int level, int speciality, string status, DateTime dateHired, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public OptumDetails(int employeeId, string email, string enterpriseId, int level, int speciality, string status, DateTime dateHired, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             EmployeeId = employeeId;
             Email = email;
@@ -36,7 +36,7 @@ namespace BusinessEntities
         public string Status { get; set; }
         public DateTime DateHired { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime ? CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
         

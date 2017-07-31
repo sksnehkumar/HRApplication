@@ -12,7 +12,7 @@ namespace BusinessEntities
         {
 
         }
-        public SkillInfo(string skillName, string skillDescription, int categoryId, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        public SkillInfo(string skillName, string skillDescription, int categoryId, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             SkillName = skillName;
             SkillDescription = skillDescription;
@@ -40,7 +40,7 @@ namespace BusinessEntities
         public string SkillDescription { get; set; }
         public int CategoryId { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime ? CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
     }

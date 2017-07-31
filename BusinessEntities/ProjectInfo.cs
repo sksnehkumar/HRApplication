@@ -8,7 +8,13 @@ namespace BusinessEntities
 {
     public class ProjectInfo
     {
-        public ProjectInfo(string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime createdDate, int lastModifiedBy, DateTime lastModifiedDate)
+        private string projectName;
+        private string projectDescription;
+        private int v;
+        private object p;
+        private DateTime now;
+
+        public ProjectInfo(string projName, string description, string client, DateTime startDate, DateTime endDate, int createdBy, DateTime ? createdDate, int lastModifiedBy, DateTime lastModifiedDate)
         {
             ProjName = projName;
             Description = description;
@@ -40,6 +46,8 @@ namespace BusinessEntities
             LastModifiedDate = lastModifiedDate;
         }
 
+        
+
         public int ProjId { get; set; }
         public string ProjName { get; set; }
         public string Description { get; set; }
@@ -47,7 +55,7 @@ namespace BusinessEntities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime ? CreatedDate { get; set; }
         public int LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
         
