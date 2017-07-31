@@ -29,7 +29,12 @@
                     <img alt="Optum Logo" class="auto-style2" src="Image/optum.png" /></td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search Employees" />
+                    <asp:Button ID="Button2" runat="server" Text="Search Projects" />
+                    <asp:Button ID="Button3" runat="server" Text="Search Skills" />
+                    <asp:Button ID="Button4" runat="server" Text="Search Categories" />
+                </td>
             </tr>
             <tr>
                 <td>
