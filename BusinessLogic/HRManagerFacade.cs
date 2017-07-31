@@ -8,7 +8,7 @@ using BusinessEntities;
 
 namespace BusinessLogic
 {
-    class HRManagerFacade
+    public class HRManagerFacade
     {
         EmployeeBC eBC;
         CategoryBC cBC;
