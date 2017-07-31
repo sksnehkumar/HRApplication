@@ -9,7 +9,7 @@ namespace BusinessLogic
     {
         public SkillBC()
         {
-
+            objSkillDAL = new SkillDAL();
         }
         public SkillBC(SkillDAL objSkillDAL)
         {

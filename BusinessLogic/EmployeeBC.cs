@@ -13,7 +13,7 @@ namespace BusinessLogic
     {
         public EmployeeBC()
         {
-
+            objEmpDAL = new EmployeeDAL();
         }
         public EmployeeBC(EmployeeDAL objEmpDAL)
         {

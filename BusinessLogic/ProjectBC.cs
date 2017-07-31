@@ -13,7 +13,7 @@ namespace BusinessLogic
     {
         public ProjectBC()
         {
-
+            objProjDAL = new ProjectDAL();
         }
         public ProjectBC(ProjectDAL objProjDAL)
         {

@@ -10,10 +10,10 @@ namespace BusinessLogic
 {
     public class HRManagerFacade
     {
-        EmployeeBC eBC;
-        CategoryBC cBC;
-        ProjectBC pBC;
-        SkillBC sBC;
+        EmployeeBC eBC = new EmployeeBC();
+        CategoryBC cBC = new CategoryBC();
+        ProjectBC pBC = new ProjectBC();
+        SkillBC sBC = new SkillBC();
 
 
         public HRManagerFacade()

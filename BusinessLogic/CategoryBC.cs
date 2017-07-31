@@ -9,7 +9,7 @@ namespace BusinessLogic
     {
         public CategoryBC()
         {
-
+            objCatDAL = new CategoryDAL();
         }
         public CategoryBC(CategoryDAL objCatDAL)
         {

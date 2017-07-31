@@ -8,7 +8,7 @@ using BusinessLogic;
 using System.Data;
 namespace Controller
 {
-    class CategoryController
+    public  class CategoryController
     {
         HRManagerFacade HRMFacade = new HRManagerFacade();
         public bool CreateCategory(string CategoryName, string CategoryDescription, int createdBy, int lastModifiedBy)

@@ -8,32 +8,68 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
+        .auto-style4 {
             width: 366px;
             height: 115px;
         }
-        .auto-style3 {
+        .auto-style5 {
             text-align: center;
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            width: 100%;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            background-color: #FF9900;
+        }
+        .auto-style8 {
+            color: #333333;
+            font-size: large;
+        }
+        .auto-style9 {
+            height: 10px;
+        }
+        .auto-style10 {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-size: xx-small;
+        }
+        .auto-style11 {
+            text-decoration: none;
+            color: #333333;
+        }
+        .auto-style12 {
+            color: #333333;
+        }
+        .auto-style13 {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="auto-style5">
+            <img alt="Optum" class="auto-style4" src="Image/optum.png" /><br />
     <div>
-        <table class="auto-style1">
+        <table class="auto-style6">
             <tr>
-                <td class="auto-style3">
-                    <img alt="Optum Logo" class="auto-style2" src="Image/optum.png" /></td>
-            </tr>
-            <tr>
-                <td class="auto-style3">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search Employees" />
-                    <asp:Button ID="Button2" runat="server" Text="Search Projects" />
-                    <asp:Button ID="Button3" runat="server" Text="Search Skills" />
-                    <asp:Button ID="Button4" runat="server" Text="Search Categories" />
+                <td class="auto-style8">
+                    <table class="auto-style7">
+                        <tr>
+                            <td class="auto-style9">
+                                <a href="" class="auto-style13"><asp:Label ID="lblEmployee"  runat="server" Text="Search Employee" CssClass="auto-style12"></asp:Label></a>
+                            </td>
+                            <td class="auto-style9">
+                                <a href="" class="auto-style13"><asp:Label ID="lblProject" runat="server" Text="Search Project" CssClass="auto-style12"></asp:Label></a>
+                            </td>
+                            <td class="auto-style9">
+                                <a href="" class="auto-style13"><asp:Label ID="lblSkill" runat="server" Text="Search Skill" CssClass="auto-style12"></asp:Label></a>
+                            </td>
+                            <td class="auto-style9">
+                                <a href="" class="auto-style13"><asp:Label ID="lblCategory" runat="server" Text="Search Category" CssClass="auto-style12"></asp:Label></a>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
             <tr>
@@ -44,10 +80,12 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style3">© Optum Global Solutions, 2010-2017</td>
-            </tr>
-        </table>
+                <td class="auto-style10">©Optum Global Solutions, 2010-2017</td>
+                    </tr>
+                </table>
     </div>
+        </div>
     </form>
-</body>
+        
+    </body>
 </html>
