@@ -7,13 +7,41 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 366px;
+            height: 115px;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <img alt="Optum Logo" class="auto-style2" src="Image/optum.png" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">© Optum Global Solutions, 2010-2017</td>
+            </tr>
+        </table>
     </div>
     </form>
 </body>

@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateSkill.aspx" />
+    <Content Include="Image\optum.png" />
     <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
