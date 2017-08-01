@@ -77,6 +77,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="UpdateCategory.aspx" />
+    <Content Include="updateEmployee.aspx" />
     <Content Include="UpdateSkill.aspx" />
     <Content Include="WebUI.Master" />
   </ItemGroup>
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="UpdateCategory.aspx.designer.cs">
       <DependentUpon>UpdateCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateEmployee.aspx.cs">
+      <DependentUpon>updateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateEmployee.aspx.designer.cs">
+      <DependentUpon>updateEmployee.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateSkill.aspx.cs">
       <DependentUpon>UpdateSkill.aspx</DependentUpon>
