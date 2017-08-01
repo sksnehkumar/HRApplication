@@ -65,7 +65,8 @@
         </tr>
         <tr>
             <td class="auto-style16">&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style14">

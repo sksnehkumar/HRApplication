@@ -79,6 +79,7 @@
     <Content Include="SearchEmployees.aspx" />
     <Content Include="SearchProject.aspx" />
     <Content Include="SearchCategory.aspx" />
+    <Content Include="SearchSkill.aspx" />
     <Content Include="UpdateCategory.aspx" />
     <Content Include="updateEmployee.aspx" />
     <Content Include="UpdateProject.aspx" />
@@ -153,6 +154,13 @@
     <Compile Include="SearchProject.aspx.designer.cs">
       <DependentUpon>SearchProject.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SearchSkill.aspx.cs">
+      <DependentUpon>SearchSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchSkill.aspx.designer.cs">
+      <DependentUpon>SearchSkill.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCategory.aspx.cs">
       <DependentUpon>UpdateCategory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,6 +209,13 @@
     </Compile>
     <Compile Include="ViewProject.aspx.designer.cs">
       <DependentUpon>ViewProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSkill.aspx.cs">
+      <DependentUpon>ViewSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSkill.aspx.designer.cs">
+      <DependentUpon>ViewSkill.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUI.Master.cs">
       <DependentUpon>WebUI.Master</DependentUpon>
