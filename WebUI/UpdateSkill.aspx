@@ -61,37 +61,37 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label4" runat="server" Text="Id   "></asp:Label>
+                <asp:Label ID="lblId" runat="server" Text="Id   "></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox3" runat="server" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtId" runat="server" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox1" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label2" runat="server" Text="Description"></asp:Label>
+                <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox2" runat="server"  Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" runat="server"  Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style20"></td>
             <td class="auto-style21">
-                <asp:Label ID="Label3" runat="server" Text="Category"></asp:Label>
+                <asp:Label ID="lblCategory" runat="server" Text="Category"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style22">
                 <asp:DropDownList ID="ddlCategory" runat="server" CssClass="auto-style14" Height="22px" Width="128px">
@@ -102,17 +102,17 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label5" runat="server" Text="ModifiedBy"></asp:Label>
+                <asp:Label ID="lblModifiedBy" runat="server" Text="ModifiedBy"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtModifiedBy" runat="server"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label6" runat="server" Text="ModifiedDate"></asp:Label>
+                <asp:Label ID="lblModifiedDate" runat="server" Text="ModifiedDate"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
                 <asp:TextBox ID="from_date" type="date" runat="server"></asp:TextBox>

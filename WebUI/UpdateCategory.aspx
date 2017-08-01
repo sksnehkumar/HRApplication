@@ -39,37 +39,39 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox1" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Label ID="Label2" runat="server" Text="Description"></asp:Label>
+                <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox2" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Label ID="Label3" runat="server" style="text-align: center; position: relative" Text="ModifiedBy"></asp:Label>
+                <asp:Label ID="lblModifiedBy" runat="server" style="text-align: center; position: relative" Text="ModifiedBy"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
             </td>
             <td class="auto-style16">
-                <asp:TextBox ID="TextBox3" runat="server" Height="18px" Width="128px" style="text-align: left; margin-left: 0px"></asp:TextBox>
+                <asp:TextBox ID="txtModifiedBy" runat="server" Height="18px" Width="128px" style="text-align: left; margin-left: 0px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
-                <asp:Label ID="Label4" runat="server" Text="ModifiedDate"></asp:Label>
+                <asp:Label ID="lblModifiedDate" runat="server" Text="ModifiedDate"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
             </td>
             <td class="auto-style16">
                 <asp:TextBox ID="from_date"  runat="server"  type="date" Height="18px" Width="128px"></asp:TextBox>

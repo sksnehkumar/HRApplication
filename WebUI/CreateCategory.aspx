@@ -58,20 +58,20 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox1" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label2" runat="server" Text="Description"></asp:Label>
+                <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" runat="server" OnTextChanged="TextBox2_TextChanged" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
