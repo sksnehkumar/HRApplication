@@ -18,9 +18,9 @@ namespace Controller
             return HRMFacade.CreateCategory(objCategoryInfo);
         }
 
-        public bool UpdateCategory(string CategoryName, string CategoryDescription, int lastModifiedBy)
+        public bool UpdateCategory(int categoryId,string CategoryName, string CategoryDescription, int lastModifiedBy)
         {
-            CategoryInfo objCategoryInfo = new CategoryInfo(CategoryName, CategoryDescription, 0, null, lastModifiedBy, DateTime.Now);
+            CategoryInfo objCategoryInfo = new CategoryInfo(categoryId,CategoryName, CategoryDescription, 0, null, lastModifiedBy, DateTime.Now);
 
             return HRMFacade.UpdateCategory(objCategoryInfo);
         }

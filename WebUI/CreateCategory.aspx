@@ -85,7 +85,7 @@
     <table>
         <tr>
             <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnCreate" runat="server" Text="Create" />
+                <asp:Button ID="btnCreate" runat="server" Text="Create" OnClick="btnCreate_Click" />
                 <br />
                 <br />
                 <br />

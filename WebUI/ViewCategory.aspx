@@ -59,20 +59,30 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
-&nbsp;&nbsp;&nbsp; </td>
+                <asp:Label ID="Label1" runat="server" Text="Id"></asp:Label>
+            </td>
             <td class="auto-style19">
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="lblId" runat="server" Text="Label"></asp:Label>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Name"></asp:Label>
+&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style19">
+                <asp:Label ID="lblName" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style18">
+                <asp:Label ID="Label3" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="lblDescription" runat="server" Text="Label"></asp:Label>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -86,7 +96,7 @@
     <table>
         <tr>
             <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnUpdate" runat="server" Text="Update" />
+                <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnUpdate_Click" />
                 <br />
                 <br />
                 <br />

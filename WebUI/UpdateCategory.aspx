@@ -39,6 +39,16 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style17">
+                <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
+            </td>
+            <td class="auto-style19">
+                <asp:Label ID="lblId" runat="server" Text="Label"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style17">
                 <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
@@ -56,33 +66,11 @@
             </td>
             <td>&nbsp;</td>
         </tr>
-        <tr>
-            <td class="auto-style15">&nbsp;</td>
-            <td class="auto-style17">
-                <asp:Label ID="lblModifiedBy" runat="server" style="text-align: center; position: relative" Text="ModifiedBy"></asp:Label>
-            &nbsp;&nbsp;&nbsp;
-            </td>
-            <td class="auto-style16">
-                <asp:TextBox ID="txtModifiedBy" runat="server" Height="18px" Width="128px" style="text-align: left; margin-left: 0px"></asp:TextBox>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style15">&nbsp;</td>
-            <td class="auto-style17">
-                <asp:Label ID="lblModifiedDate" runat="server" Text="ModifiedDate"></asp:Label>
-            &nbsp;&nbsp;&nbsp;
-            </td>
-            <td class="auto-style16">
-                <asp:TextBox ID="from_date"  runat="server"  type="date" Height="18px" Width="128px"></asp:TextBox>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+        </table>
     <table>
         <tr>
             <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnUpdate" runat="server" Text="Update" />
+                <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                 <br />
                 <br />
                 <br />
