@@ -13,5 +13,20 @@ namespace WebUI
         {
 
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCreate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void gvCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
