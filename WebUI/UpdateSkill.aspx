@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebUI.Master" AutoEventWireup="true" CodeBehind="CreateCategory.aspx.cs" Inherits="WebUI.CreateCategory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebUI.Master" AutoEventWireup="true" CodeBehind="UpdateSkill.aspx.cs" Inherits="WebUI.UpdateSkill" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
 
@@ -33,6 +33,9 @@
             text-align: left;
             height: 26px;
         }
+        .auto-style14 {
+            margin-left: 0px;
+        }
         .auto-style23 {
             height: 26px;
         }
@@ -58,6 +61,16 @@
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
+                <asp:Label ID="lblId" runat="server" Text="Id   "></asp:Label>
+&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style19">
+                <asp:TextBox ID="txtId" runat="server" Width="128px"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style18">
                 <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
@@ -71,21 +84,46 @@
                 <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="txtDescription" runat="server" OnTextChanged="TextBox2_TextChanged" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" runat="server"  Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style20"></td>
-            <td class="auto-style21">&nbsp;</td>
-            <td class="auto-style22">&nbsp;</td>
+            <td class="auto-style21">
+                <asp:Label ID="lblCategory" runat="server" Text="Category"></asp:Label>
+&nbsp;&nbsp; </td>
+            <td class="auto-style22">
+                <asp:DropDownList ID="ddlCategory" runat="server" CssClass="auto-style14" Height="22px" Width="128px">
+                </asp:DropDownList>
+            </td>
             <td class="auto-style23"></td>
+        </tr>
+        <tr>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style18">
+                <asp:Label ID="lblModifiedBy" runat="server" Text="ModifiedBy"></asp:Label>
+&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style19">
+                <asp:TextBox ID="txtModifiedBy" runat="server"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style15">&nbsp;</td>
+            <td class="auto-style18">
+                <asp:Label ID="lblModifiedDate" runat="server" Text="ModifiedDate"></asp:Label>
+&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style19">
+                <asp:TextBox ID="from_date" type="date" runat="server"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
         </tr>
     </table>
     <table>
         <tr>
             <td class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnCreate" runat="server" Text="Create" />
+                <asp:Button ID="btnUpdate" runat="server" Text="Update" BackColor="#FF6600" />
                 <br />
                 <br />
                 <br />
