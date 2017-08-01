@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateCategory.aspx" />
+    <Content Include="CreateEmployee.aspx" />
+    <Content Include="CreateProject.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -89,6 +91,20 @@
     </Compile>
     <Compile Include="CreateCategory.aspx.designer.cs">
       <DependentUpon>CreateCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployee.aspx.cs">
+      <DependentUpon>CreateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateEmployee.aspx.designer.cs">
+      <DependentUpon>CreateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProject.aspx.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateProject.aspx.designer.cs">
+      <DependentUpon>CreateProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="CreateSkill.aspx.cs">
       <DependentUpon>CreateSkill.aspx</DependentUpon>
