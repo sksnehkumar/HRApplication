@@ -76,12 +76,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="SearchProject.aspx" />
     <Content Include="SearchCategory.aspx" />
     <Content Include="UpdateCategory.aspx" />
     <Content Include="updateEmployee.aspx" />
+    <Content Include="UpdateProject.aspx" />
     <Content Include="UpdateSkill.aspx" />
     <Content Include="SearchSkill.aspx" />
+    <Content Include="ViewCategory.aspx" />
     <Content Include="ViewEmployee.aspx" />
+    <Content Include="ViewProject.aspx" />
     <Content Include="ViewSkill.aspx" />
     <Content Include="WebUI.Master" />
   </ItemGroup>
@@ -142,6 +146,20 @@
     <Compile Include="SearchSkill.aspx.designer.cs">
       <DependentUpon>SearchSkill.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SearchProject.aspx.cs">
+      <DependentUpon>SearchProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchProject.aspx.designer.cs">
+      <DependentUpon>SearchProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSkill.aspx.cs">
+      <DependentUpon>SearchSkill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchSkill.aspx.designer.cs">
+      <DependentUpon>SearchSkill.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCategory.aspx.cs">
       <DependentUpon>UpdateCategory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,6 +174,13 @@
     <Compile Include="updateEmployee.aspx.designer.cs">
       <DependentUpon>updateEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UpdateProject.aspx.cs">
+      <DependentUpon>UpdateProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateProject.aspx.designer.cs">
+      <DependentUpon>UpdateProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UpdateSkill.aspx.cs">
       <DependentUpon>UpdateSkill.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -163,12 +188,26 @@
     <Compile Include="UpdateSkill.aspx.designer.cs">
       <DependentUpon>UpdateSkill.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewCategory.aspx.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCategory.aspx.designer.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployee.aspx.cs">
       <DependentUpon>ViewEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewEmployee.aspx.designer.cs">
       <DependentUpon>ViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProject.aspx.cs">
+      <DependentUpon>ViewProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProject.aspx.designer.cs">
+      <DependentUpon>ViewProject.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUI.Master.cs">
       <DependentUpon>WebUI.Master</DependentUpon>
