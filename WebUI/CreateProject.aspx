@@ -76,36 +76,36 @@
         <tr>
             <td class="auto-style25"></td>
             <td class="auto-style26">
-                <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style27">
-                <asp:TextBox ID="TextBox1" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td class="auto-style28"></td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
             <td class="auto-style18">
-                <asp:Label ID="Label2" runat="server" Text="Description"></asp:Label>
+                <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox2" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtDescription" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style20"></td>
             <td class="auto-style21">
-                <asp:Label ID="Label3" runat="server" Text="Client"></asp:Label>
+                <asp:Label ID="lblClient" runat="server" Text="Client"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style22">
-                <asp:TextBox ID="TextBox3" runat="server" Height="18px" Width="128px"></asp:TextBox>
+                <asp:TextBox ID="txtClient" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
             <td class="auto-style23"></td>
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
-            <td class="auto-style18">Start date&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style18" id="lblStartDate">Start date&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
                 <asp:TextBox ID="fromDate" type="date" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
@@ -113,7 +113,7 @@
         </tr>
         <tr>
             <td class="auto-style15">&nbsp;</td>
-            <td class="auto-style18">End Date&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td class="auto-style18" id="lblEndDate">End Date&nbsp;&nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
                 <asp:TextBox ID="EndDate" type="date" runat="server" Height="18px" Width="128px"></asp:TextBox>
             </td>
