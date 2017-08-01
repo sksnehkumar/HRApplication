@@ -68,7 +68,7 @@
                 <asp:Label ID="Label1" runat="server" Text="Name" CssClass="auto-style25"></asp:Label>
 &nbsp;&nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox1" runat="server" Height="18px" Width="128px" CssClass="auto-style25"></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Height="18px" Width="128px" CssClass="auto-style25"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -78,7 +78,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Description" CssClass="auto-style25"></asp:Label>
 &nbsp;&nbsp; </td>
             <td class="auto-style19">
-                <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" Height="18px" Width="128px" CssClass="auto-style25"></asp:TextBox>
+                <asp:TextBox ID="txtDesc" runat="server" OnTextChanged="TextBox2_TextChanged" Height="18px" Width="128px" CssClass="auto-style25"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
         </tr>

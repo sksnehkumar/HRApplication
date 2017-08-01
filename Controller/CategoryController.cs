@@ -54,16 +54,17 @@ namespace Controller
             }
             return categoryCollection;
         }
-        public EntityCollection<string> GetCatagoryList()
+        public Dictionary<int, string> GetCategoryList()
         {
             DataTable objDT = HRMFacade.GetCatagoryList();
-            EntityCollection<string> categoryCollection = new EntityCollection<string>();
+            Dictionary<int, string> categoryCollection = new Dictionary<int, string>();
 
             foreach (DataRow row in objDT.Rows)
             {
-                string CategoryName = row[0].ToString();
+                int categoryId = Convert.ToInt32(row[0]);
+                string categoryName = row[1].ToString();
 
-                categoryCollection.Add(CategoryName);
+                categoryCollection.Add(categoryId, categoryName);
             }
             return categoryCollection;
         }
