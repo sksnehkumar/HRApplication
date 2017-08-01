@@ -63,7 +63,7 @@
                                 <a href="" class="auto-style13"><asp:Label ID="lblProject" runat="server" Text="Search Project" CssClass="auto-style12"></asp:Label></a>
                             </td>
                             <td class="auto-style9">
-                                <a href="" class="auto-style13"><asp:Label ID="lblSkill" runat="server" Text="Search Skill" CssClass="auto-style12"></asp:Label></a>
+                                <a href="SearchSkill.aspx" class="auto-style13"><asp:Label ID="lblSkill" runat="server" Text="Search Skill" CssClass="auto-style12"></asp:Label></a>
                             </td>
                             <td class="auto-style9">
                                 <a href="" class="auto-style13"><asp:Label ID="lblCategory" runat="server" Text="Search Category" CssClass="auto-style12"></asp:Label></a>
