@@ -76,13 +76,13 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="SearchEmployees.aspx" />
     <Content Include="SearchProject.aspx" />
     <Content Include="SearchCategory.aspx" />
     <Content Include="UpdateCategory.aspx" />
     <Content Include="updateEmployee.aspx" />
     <Content Include="UpdateProject.aspx" />
     <Content Include="UpdateSkill.aspx" />
-    <Content Include="SearchSkill.aspx" />
     <Content Include="ViewCategory.aspx" />
     <Content Include="ViewEmployee.aspx" />
     <Content Include="ViewProject.aspx" />
@@ -139,12 +139,12 @@
     <Compile Include="SearchCategory.aspx.designer.cs">
       <DependentUpon>SearchCategory.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SearchSkill.aspx.cs">
-      <DependentUpon>SearchSkill.aspx</DependentUpon>
+    <Compile Include="SearchEmployees.aspx.cs">
+      <DependentUpon>SearchEmployees.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SearchSkill.aspx.designer.cs">
-      <DependentUpon>SearchSkill.aspx</DependentUpon>
+    <Compile Include="SearchEmployees.aspx.designer.cs">
+      <DependentUpon>SearchEmployees.aspx</DependentUpon>
     </Compile>
     <Compile Include="SearchProject.aspx.cs">
       <DependentUpon>SearchProject.aspx</DependentUpon>
@@ -152,13 +152,6 @@
     </Compile>
     <Compile Include="SearchProject.aspx.designer.cs">
       <DependentUpon>SearchProject.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SearchSkill.aspx.cs">
-      <DependentUpon>SearchSkill.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SearchSkill.aspx.designer.cs">
-      <DependentUpon>SearchSkill.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateCategory.aspx.cs">
       <DependentUpon>UpdateCategory.aspx</DependentUpon>
