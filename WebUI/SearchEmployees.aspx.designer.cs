@@ -10,16 +10,16 @@
 namespace WebUI {
     
     
-    public partial class SearchSkill {
+    public partial class SearchEmployees {
         
         /// <summary>
-        /// Label1 control.
+        /// lblFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblFirstName;
         
         /// <summary>
         /// TextBox1 control.
@@ -29,6 +29,24 @@ namespace WebUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// lblLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLastName;
+        
+        /// <summary>
+        /// TextBox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
         
         /// <summary>
         /// btnSearch control.
@@ -49,13 +67,12 @@ namespace WebUI {
         protected global::System.Web.UI.WebControls.Button btnCreate;
         
         /// <summary>
-        /// gvSkills control.
+        /// gvEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvSkills;
-        
+        protected global::System.Web.UI.WebControls.GridView gvEmployee;
     }
 }

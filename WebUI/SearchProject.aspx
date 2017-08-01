@@ -60,7 +60,7 @@
                     </tr>
                 </table>
             </td>
-            <td>
+            <td id="Projects">
                 <asp:GridView ID="gvProjects" runat="server" Width="403px" AutoGenerateColumns="false" DataKeyNames="ProjId" OnRowCommand="gvProjects_RowCommand" OnSelectedIndexChanged="gvProjects_SelectedIndexChanged">
                     <Columns>
                         <asp:HyperLinkField DataNavigateUrlFields="ProjId" HeaderText="ID" DataNavigateUrlFormatString="ViewProject.aspx?projectId={0}" DataTextField="ProjId" />
