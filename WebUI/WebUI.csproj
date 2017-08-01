@@ -79,6 +79,8 @@
     <Content Include="UpdateCategory.aspx" />
     <Content Include="updateEmployee.aspx" />
     <Content Include="UpdateSkill.aspx" />
+    <Content Include="SearchSkill.aspx" />
+    <Content Include="ViewSkill.aspx" />
     <Content Include="WebUI.Master" />
   </ItemGroup>
   <ItemGroup>
