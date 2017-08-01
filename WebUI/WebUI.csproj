@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateCategory.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -82,6 +83,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCategory.aspx.cs">
+      <DependentUpon>CreateCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateCategory.aspx.designer.cs">
+      <DependentUpon>CreateCategory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateSkill.aspx.cs">
       <DependentUpon>CreateSkill.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
