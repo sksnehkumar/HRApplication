@@ -61,7 +61,7 @@
                 </table>
             </td>
             <td>
-                <asp:GridView ID="gvCategory" runat="server" Width="438px" AutoGenerateColumns="false" OnRowCommand="gvCategory_Rowcommand" DataKeyNames="CategoryId" >
+                <asp:GridView ID="gvCategory" runat="server" Width="438px" AutoGenerateColumns="false" OnRowCommand="gvCategory_Rowcommand" DataKeyNames="CategoryId" OnSelectedIndexChanged="gvCategory_SelectedIndexChanged">
                     <Columns>
                         <asp:HyperLinkField DataNavigateUrlFields="CategoryId" HeaderText="ID" DataNavigateUrlFormatString="ViewCategory.aspx?CategoryId={0}" DataTextField="CategoryId" />
                         <asp:BoundField HeaderText="Name" DataField="CategoryName" />
