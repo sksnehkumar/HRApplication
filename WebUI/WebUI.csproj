@@ -80,6 +80,7 @@
     <Content Include="updateEmployee.aspx" />
     <Content Include="UpdateSkill.aspx" />
     <Content Include="SearchSkill.aspx" />
+    <Content Include="ViewEmployee.aspx" />
     <Content Include="ViewSkill.aspx" />
     <Content Include="WebUI.Master" />
   </ItemGroup>
@@ -146,6 +147,13 @@
     </Compile>
     <Compile Include="UpdateSkill.aspx.designer.cs">
       <DependentUpon>UpdateSkill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployee.aspx.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewEmployee.aspx.designer.cs">
+      <DependentUpon>ViewEmployee.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUI.Master.cs">
       <DependentUpon>WebUI.Master</DependentUpon>
